@@ -35,6 +35,7 @@
     
     
     NSString* uptoken = [options objectForKey:@"uptoken"];
+    NSString* key = [options objectForKey:@"key"];
 
     if(uptoken&&uptoken.length>1)
     {
@@ -55,7 +56,7 @@
     _filetotal=_filePaths.count;
     _returns = [[NSMutableArray alloc] init];
     for (id obj in _filePaths) {
-        [self.sUploader uploadFile:obj key:nil extra:nil];
+        [self.sUploader uploadFile:obj key:key extra:nil];
     }
     
     
