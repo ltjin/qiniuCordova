@@ -117,7 +117,7 @@ public class QiniuPlugin extends CordovaPlugin implements UpCompletionHandler {
 			String filePath = filePaths.optString(i);
 			String name = StrUtils.appendPrefix(prefix, StrUtils.getFileName(filePath));	//获取文件名称 添加前缀
 			filePath = URLDecoder.decode(filePath, "UTF-8");	//文件路径解码
-			uploadManager.put(new File(filePath), key, QiniuKey.UPLOAD_TOKEN, this,null);	//开始上传
+			uploadManager.put(new File(filePath), null, QiniuKey.UPLOAD_TOKEN, this,null);	//开始上传
 		}
 
 	}
