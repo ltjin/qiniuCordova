@@ -17,6 +17,7 @@
 @property (retain, nonatomic)QiniuSimpleUploader *sUploader;
 @property (copy, nonatomic)NSString *filePath;
 @property (copy, nonatomic)NSArray *filePaths;
+@property (copy, nonatomic)NSArray *keys;
 //@property (copy, nonatomic)NSMutableDictionary *returns;
 @property (copy, nonatomic)NSMutableArray *returns;
 @property (copy, nonatomic)NSString *lastResumableKey;
