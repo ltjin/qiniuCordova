@@ -57,7 +57,7 @@
     _returns = [[NSMutableArray alloc] init];
     int i = 0;
     for (id obj in _filePaths) {
-        [self.sUploader uploadFile:obj key:[key objectAtIndex:i] extra:nil];
+        [self.sUploader uploadFile:obj key:[_keys objectAtIndex:i] extra:nil];
         i++;
     }
     
